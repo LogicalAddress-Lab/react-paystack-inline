@@ -316,7 +316,7 @@ export default class ReactPaystackInline extends React.Component {
                             [this.props.triggerEvent]: this.onClick,
                         	}
                     	}
-                    children = { this.props.children }
+                    children={ this.props.children }
                     />
                 );
             }
