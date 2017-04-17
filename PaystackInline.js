@@ -308,18 +308,15 @@ export default class ReactPaystackInline extends React.Component {
     }
 
     render() {
-        const {
-            ComponentClass
-        } = this.props;
+        const { ComponentClass } = this.props;
         if (this.props.lazy && this.props.formId) return ( < div > < /div>);
             if (this.props.children) {
-                return ( < ComponentClass {... {
+                return (
+                	<ComponentClass {... {
                             [this.props.triggerEvent]: this.onClick,
-                        }
-                    }
-                    children = {
-                        this.props.children
-                    }
+                        	}
+                    	}
+                    children = { this.props.children }
                     />
                 );
             }
